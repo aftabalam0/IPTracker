@@ -1,38 +1,119 @@
-.App {
+/* Header CSS - App.js */
+.title {
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  font-size: larger;
+  font-weight: bolder;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: small;
+    padding-bottom: 3px;
+  }
+}
+
+/* Components CSS - App.js */
+.components {
+  display: flex;
+  margin: .5rem;
+}
+
+.heroComponent {
+  flex: 0 0 40%;
+  /* background-color: lightgray; */
+  padding: 20px;
+}
+
+.mapComponent {
+  flex: 0 0 55%;
+  margin: 0rem;
+  padding: 10px 10px 20px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .components {
+    flex-direction: column;
+    padding-bottom: 0.125rem;
+  }
+}
+
+/* Hero Section CSS */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input, button {
+  font-family: 'Concert One', cursive;
+  margin-top: 3rem;
+  font-size: 1rem;
+  padding: 1.2rem;
+  background-color: transparent;
+  color: black;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+input{
+  padding: 1.2rem 1.2rem;
+  width:13rem;
+}
+
+
+
+.data-list{
+  margin: 4rem 0rem;
+  font-size: 1.4rem;
+  
+}
+.data-list>p>span{
+  color:rgb(91, 129, 16);
+}
+
+.Map-title{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.map-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* background-color: gray; */
+  border:2px dashed gray; 
 }
 
-.App-link {
-  color: #61dafb;
+.errorCheck {
+  color:red;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Footer Css */
+
+.footer{
+  background-color: black;
+  padding: .2rem 0rem .2rem 0rem;
+  color:#ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem
+}
+
+.footer-logo{
+  width: 1.4rem;
+}
+.git-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color:#ccc;
 }
